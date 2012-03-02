@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="8dp">
+	
+	<TableRow android:layout_height="wrap_content" android:id="@+id/TableRow01" android:layout_width="wrap_content">
+		<Button android:text="Basic Thread Demo" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:onClick="onThreadDemoClick"
+			android:id="@+id/Button01"></Button>
+		<TextView android:layout_height="wrap_content"
+			android:text="Example of a basic background thread"
+			android:id="@+id/TextView01" android:layout_width="0dp" android:layout_weight="1"></TextView>
+	</TableRow>
+	<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow02"
+		android:layout_width="match_parent">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/Button02" android:text="AsynchTask" android:onClick="onAsynch">
+			</Button>
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/textView1" android:layout_width="wrap_content" android:text="Example use of AsynchTask" android:onClick="onAsynch"></TextView>
+	</TableRow>
+	
+	<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow03"
+		android:layout_width="match_parent">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/Button03" android:text="RotationAsynchTask" android:onClick="onRotationAsynch">
+		</Button>
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/textView1" android:layout_width="wrap_content" 
+			android:text="Example use of AsynchTask and dealing with Rotation" 
+			android:onClick="onRotationAsynch">
+		</TextView>
+	</TableRow>	
+	
+</TableLayout>
